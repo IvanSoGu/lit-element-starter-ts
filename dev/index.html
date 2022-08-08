@@ -6,7 +6,12 @@
     <title>&lt;my-element> Demo</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
+    <script type="module" src="../build/componentes/tema04/element.js"></script>
+    <script type="module" src="../build/componentes/tema04/mis-propiedades.js"></script>
+    <script type="module" src="../build/componentes/tema04/ejercicios-propiedades.js"></script>
+    <script type="module" src="../build/componentes/tema05/mis-condiciones.js"></script>
+    <script type="module" src="../build/componentes/tema05/mi-listado.js"></script>
+    <script type="module" src="../build/componentes/tema05/MiSlotChachi.ts"></script>
     <style>
       p {
         border: solid 1px blue;
@@ -18,5 +23,38 @@
     <my-element>
       <p>This is child content</p>
     </my-element>
+
+    <my-element name="Iván" count =5>
+      <p>This is another child content who greets you!</p>
+    </my-element>
+
+    <my-element count =-15>
+      <p>This is another child content who greets you!</p>
+    </my-element>
+
+    <mis-propiedades>
+      <h2>demo</h2>
+    </mis-propiedades>
+
+    <mis-propiedades numero="0">
+      <h2>Cambiando number init</h2>
+    </mis-propiedades>
+
+    <ejercicios-propiedades valor="valor cambiado">
+      <h2>Ejercicio de la unidad 4</h2>
+    </ejercicios-propiedades>
+
+    <mis-condiciones> </mis-condiciones>
+    <mis-condiciones numero=0> </mis-condiciones>
+    <mis-condiciones numero=1> </mis-condiciones>
+
+    <mi-listado></mi-listado>
+
+    <mi-slot-chachi>
+      <p slot="cabecera">This is a Header</p>
+      <p> This is the content </p>
+      <p slot="pie">This is a footer</p>
+    </mi-slot-chachi>
+
   </body>
 </html>
