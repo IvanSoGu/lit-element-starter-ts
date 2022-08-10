@@ -6,12 +6,23 @@
     <title>&lt;my-element> Demo</title>
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../build/componentes/tema04/element.js"></script>
+    <script type="module" src="../build/componentes/tema04/my-element.js"></script>
     <script type="module" src="../build/componentes/tema04/mis-propiedades.js"></script>
     <script type="module" src="../build/componentes/tema04/ejercicios-propiedades.js"></script>
     <script type="module" src="../build/componentes/tema05/mis-condiciones.js"></script>
     <script type="module" src="../build/componentes/tema05/mi-listado.js"></script>
-    <script type="module" src="../build/componentes/tema05/MiSlotChachi.ts"></script>
+    <script type="module" src="../build/componentes/tema05/MiSlotChachi.js"></script>
+    <script type="module" src="../build/componentes/tema06/CssShadowDom.js"></script>
+    <script type="module" src="../build/componentes/tema06/SlottedCSS.js"></script>
+    <script type="module" src="../build/componentes/tema06/Madre.js"></script>
+    <script type="module" src="../build/componentes/tema06/Hija.js"></script>
+    <script type="module" src="../build/componentes/tema06/DefinicionCSS.js"></script>
+    <script type="module" src="../build/componentes/tema07/ComponenteEscucha.js"></script>
+    <script type="module" src="../build/componentes/tema07/ComponentePersonalizado.js"></script>
+    <script type="module" src="../build/componentes/tema09/MiFormulario.js"></script>
+    <script type="module" src="../build/componentes/tema09/FormularioLogin.js"></script>
+
+
     <style>
       p {
         border: solid 1px blue;
@@ -55,6 +66,23 @@
       <p> This is the content </p>
       <p slot="pie">This is a footer</p>
     </mi-slot-chachi>
+
+    <css-shadow-dom></css-shadow-dom>
+    <css-shadow-dom class="red"></css-shadow-dom>
+
+    <slotted-css> <p>This one is blue =D </p> </slotted-css>
+
+    <componente-madre></componente-madre>
+    <componente-hija></componente-hija>
+
+    <definicion-css></definicion-css>
+    <definicion-css class="green"></definicion-css>
+
+    <componente-personalizado><componente-escucha></componente-escucha></componente-personalizado>
+
+    <mi-formulario></mi-formulario>
+
+    <formulario-login></formulario-login>
 
   </body>
 </html>
